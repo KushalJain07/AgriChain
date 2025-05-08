@@ -9,8 +9,11 @@ const TrustedPartners = () => {
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
           {/* Partner logo placeholders */}
           {Array.from({ length: 6 }).map((_, i) => (
-            <div key={i} className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all">
-              <div className="bg-gray-200 h-8 w-24 md:h-10 md:w-32 rounded-md flex items-center justify-center">
+            <div 
+              key={i} 
+              className="grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 transform hover:scale-105"
+            >
+              <div className="bg-gray-200 h-8 w-24 md:h-10 md:w-32 rounded-md flex items-center justify-center shadow-sm hover:shadow-md transition-all">
                 <div className="text-gray-500 font-medium text-xs">PARTNER {i + 1}</div>
               </div>
             </div>

@@ -15,35 +15,35 @@ const Hero = () => {
             Blockchain-based food traceability from farm to fork
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-16 animate-fade-in animate-delay-2">
-            <button className="btn-primary bg-white text-agrichain-green hover:bg-gray-100">
+            <button className="btn-primary bg-white text-agrichain-green hover:bg-gray-100 transform transition-all duration-300 hover:scale-105 hover:shadow-lg">
               Get Started
             </button>
-            <button className="btn-secondary bg-transparent text-white border-white hover:bg-white/10">
+            <button className="btn-secondary bg-transparent text-white border-white hover:bg-white/10 transform transition-all duration-300 hover:scale-105">
               Learn How It Works
             </button>
           </div>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 animate-fade-in animate-delay-3">
             <div className="text-center">
-              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3">
+              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3 transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg">
                 <Leaf size={28} className="text-white" />
               </div>
               <p className="text-white font-medium">Farmer</p>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3">
+              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3 transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg">
                 <Truck size={28} className="text-white" />
               </div>
               <p className="text-white font-medium">Transporter</p>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3">
+              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3 transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg">
                 <Factory size={28} className="text-white" />
               </div>
               <p className="text-white font-medium">Processor</p>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3">
+              <div className="bg-white/10 p-4 rounded-full mx-auto w-16 h-16 flex items-center justify-center mb-3 transition-all duration-300 hover:bg-white/20 hover:scale-110 hover:shadow-lg">
                 <Store size={28} className="text-white" />
               </div>
               <p className="text-white font-medium">Retailer</p>

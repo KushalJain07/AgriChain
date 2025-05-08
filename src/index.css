@@ -77,7 +77,7 @@
   }
   
   .card {
-    @apply bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all border border-gray-100;
+    @apply bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100;
   }
 }
 
@@ -95,4 +95,31 @@
 
 .animate-delay-4 {
   animation-delay: 0.4s;
+}
+
+/* Image hover effects */
+img {
+  @apply transition-all duration-300;
+}
+
+img:hover {
+  @apply brightness-105;
+}
+
+/* Card hover transitions */
+.hover-card-lift {
+  @apply transition-all duration-300;
+}
+
+.hover-card-lift:hover {
+  @apply -translate-y-1 shadow-md;
+}
+
+/* Icon hover effects */
+.icon-hover {
+  @apply transition-all duration-300;
+}
+
+.icon-hover:hover {
+  @apply scale-110 rotate-3;
 }

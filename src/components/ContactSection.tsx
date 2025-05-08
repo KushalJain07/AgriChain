@@ -14,12 +14,12 @@ const ContactSection = () => {
       <p className="section-subtitle">Have questions or ready to transform your supply chain? Get in touch with our experts.</p>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto mt-12">
-        <div className="relative rounded-xl overflow-hidden h-full min-h-[400px]">
-          <div className="absolute inset-0 bg-gradient-to-r from-agrichain-green/80 to-agrichain-green-dark/80 z-10"></div>
+        <div className="relative rounded-xl overflow-hidden h-full min-h-[400px] transform transition-all duration-500 hover:scale-[1.02] hover:shadow-xl">
+          <div className="absolute inset-0 bg-gradient-to-r from-agrichain-green/80 to-agrichain-green-dark/80 z-10 transition-all duration-500 hover:from-agrichain-green/90 hover:to-agrichain-green-dark/90"></div>
           <img 
             src="https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&q=80" 
             alt="Agricultural field" 
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-all duration-700 hover:scale-110"
           />
           <div className="absolute inset-0 z-20 p-8 flex flex-col justify-end text-white">
             <h3 className="text-2xl font-semibold mb-4">Ready to Transform Food Traceability?</h3>
@@ -108,7 +108,7 @@ const ContactSection = () => {
             
             <button
               type="submit"
-              className="btn-primary w-full"
+              className="btn-primary w-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg"
             >
               Send Message
             </button>

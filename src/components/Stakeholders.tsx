@@ -49,16 +49,25 @@ const Stakeholders = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {stakeholders.map((stakeholder, index) => (
-          <div key={index} className="card hover:border-agrichain-green transition-all duration-300 h-full flex flex-col">
-            <div className={`${stakeholder.color} p-4 inline-block rounded-lg mb-6`}>
+          <div 
+            key={index} 
+            className="card hover:border-agrichain-green transition-all duration-300 h-full flex flex-col transform hover:scale-102 hover:shadow-lg"
+          >
+            <div className={`${stakeholder.color} p-4 inline-block rounded-lg mb-6 transition-all duration-300 hover:shadow-inner`}>
               {stakeholder.icon}
             </div>
             <h3 className="text-xl font-semibold mb-3">{stakeholder.title}</h3>
             <p className="text-gray-600 flex-grow">{stakeholder.description}</p>
             <div className="mt-4">
-              <button className="text-agrichain-green font-medium hover:text-agrichain-green-dark inline-flex items-center">
+              <button className="text-agrichain-green font-medium hover:text-agrichain-green-dark inline-flex items-center group transition-all duration-300">
                 Learn More
-                <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg 
+                  className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform duration-300" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  viewBox="0 0 24 24" 
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </button>

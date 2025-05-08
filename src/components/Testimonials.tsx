@@ -30,15 +30,18 @@ const Testimonials = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {testimonials.map((testimonial, index) => (
-          <div key={index} className="card relative">
+          <div 
+            key={index} 
+            className="card relative transform hover:scale-105 hover:shadow-lg transition-all duration-300"
+          >
             <div className="absolute top-0 right-0 -mt-4 -mr-4 text-5xl text-agrichain-green/20 font-serif">"</div>
             <p className="text-gray-600 italic mb-6">{testimonial.quote}</p>
             <div className="flex items-center mt-auto">
-              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4 border-2 border-transparent hover:border-agrichain-green transition-all duration-300">
                 <img 
                   src={testimonial.image} 
                   alt={testimonial.name} 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transition-all duration-300 hover:scale-110"
                 />
               </div>
               <div>
