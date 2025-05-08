@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X,AtSign,ShieldQuestion,Handshake,Rocket,ShieldCheck,Contact } from 'lucide-react'; // Added ChevronRight
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,12 +23,54 @@ const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#about" className="text-gray-600 hover:text-agrichain-green transition-colors">About</a>
-            <a href="#why" className="text-gray-600 hover:text-agrichain-green transition-colors">Why Choose Us</a>
-            <a href="#stakeholders" className="text-gray-600 hover:text-agrichain-green transition-colors">Stakeholders</a>
-            <a href="#how" className="text-gray-600 hover:text-agrichain-green transition-colors">How It Works</a>
-            <a href="#faq" className="text-gray-600 hover:text-agrichain-green transition-colors">FAQs</a>
-            <a href="#contact" className="btn-primary">Contact Us</a>
+            <a href="#about" className="text-gray-600 hover:text-agrichain-green transition-colors group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">About</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <AtSign className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#why" className="text-gray-600 hover:text-agrichain-green transition-colors group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Why Choose Us</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <ShieldCheck className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#stakeholders" className="text-gray-600 hover:text-agrichain-green transition-colors group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Stakeholders</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Handshake className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#how" className="text-gray-600 hover:text-agrichain-green transition-colors group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">How It Works</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Rocket className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#faq" className="text-gray-600 hover:text-agrichain-green transition-colors group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">FAQs</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <ShieldQuestion className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#contact" className="btn-primary group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Contact Us</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Contact className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -50,12 +92,54 @@ const Navbar = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 space-y-4">
-            <a href="#about" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2">About</a>
-            <a href="#why" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2">Why Choose Us</a>
-            <a href="#stakeholders" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2">Stakeholders</a>
-            <a href="#how" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2">How It Works</a>
-            <a href="#faq" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2">FAQs</a>
-            <a href="#contact" className="block btn-primary text-center mt-4">Contact Us</a>
+            <a href="#about" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">About</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <AtSign className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#why" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Why Choose Us</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <ShieldCheck className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#stakeholders" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Stakeholders</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Handshake className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#how" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">How It Works</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Rocket className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#faq" className="block text-gray-600 hover:text-agrichain-green transition-colors py-2 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">FAQs</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <ShieldQuestion className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
+            <a href="#contact" className="block btn-primary text-center mt-4 group relative">
+              <span className="transition-opacity duration-200 ease-in-out group-hover:opacity-0">Contact Us</span>
+              {/* Code for the hover icon starts here */}
+              <span className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-200 ease-in-out group-hover:opacity-100">
+                <Contact className="w-5 h-5" />
+              </span>
+              {/* Code for the hover icon ends here */}
+            </a>
           </div>
         )}
       </div>
