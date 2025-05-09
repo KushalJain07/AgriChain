@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const WhyChooseUs = () => {
   const features = [
@@ -49,16 +50,20 @@ const WhyChooseUs = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="card bg-white h-full flex flex-col transform hover:scale-105 hover:shadow-md transition-all duration-300"
+            <motion.div
+              key={index}
+              className="card bg-white h-full flex flex-col border border-transparent hover:border-agrichain-green transform hover:scale-105 hover:shadow-md transition-all duration-300"
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.6, delay: index * 0.15 }}
             >
               <div className="bg-agrichain-green/5 p-4 inline-block rounded-lg mb-6 transition-all duration-300 hover:bg-agrichain-green/10">
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
               <p className="text-gray-600 flex-grow">{feature.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
